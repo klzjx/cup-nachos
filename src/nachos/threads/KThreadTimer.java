@@ -5,7 +5,7 @@ public class KThreadTimer implements Comparable<KThreadTimer> {
 	private KThread currentThread;
 	private long waitTime;
 	
-	public KThreadTimer (KThread thread, long time) {
+	public KThreadTimer(KThread thread, long time) {
 		currentThread = thread;
 		waitTime = time;
 	}

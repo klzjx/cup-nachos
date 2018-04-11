@@ -77,6 +77,10 @@ public class RoundRobinScheduler extends Scheduler {
 				System.out.print((KThread) i.next() + " ");
 		}
 
+		public boolean empty() {
+			return waitQueue.size() == 0;
+		}
+
 		private LinkedList<KThread> waitQueue = new LinkedList<KThread>();
 	}
 }
